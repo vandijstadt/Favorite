@@ -1,0 +1,71 @@
+@font-face{
+	font-family: "Audiowide-Regular";
+	src: url('Audiowide-Regular.ttf');
+}
+
+/* Site */
+body{
+    font-family: "Audiowide-Regular", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    background-image: url("img/fond2.jpg");
+	background-attachment: fixed; 
+	background-repeat: repeat-y;
+	background-size: auto, 100%;
+	text-align: center;
+	color: white;
+}
+p a{
+    width: 500px;
+	color: white;
+}
+h1{
+	color: red;
+}
+h2{
+	color: green;
+}
+
+header{
+	position: fixed;
+	top: 0.5%;
+	left: 0.1%;
+}
+header ol {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	text-align:center;
+}
+header li {
+	float:left;
+	margin:auto;
+	padding:0;
+}
+header li a {
+	display:block;
+	width:100px;
+	color:white;
+	text-decoration:none;
+	padding:5px;
+}
+header ol li ol {
+	display:none;
+}
+header li ol {
+	position:absolute;
+}
+header {
+	height:50px;
+}
+header ol li:hover ol {
+	display:block;
+}
+header li:hover ol li {
+	float:none;
+}
+header li a:hover {
+	color:black;
+	background-color: white;
+	border-radius: 10px;
+}
+
