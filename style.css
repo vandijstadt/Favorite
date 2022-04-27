@@ -4,13 +4,14 @@
 }
 
 /* Site */
-body{
-    font-family: "Audiowide-Regular", Helvetica, Arial, sans-serif;
-    font-size: 100%;
-    background-image: url("img/fond2.jpg");
-	background-attachment: fixed; 
+body {
+	font-family: "Audiowide-Regular", Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	background-color: black;
+	background-image: url("img/fond2.jpg");
+	background-attachment: fixed;
 	background-repeat: repeat-y;
-	background-size: auto, 100%;
+	background-size: auto, auto;
 	text-align: center;
 	color: white;
 }
