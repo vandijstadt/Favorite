@@ -11,12 +11,6 @@
 		text-align: center;
 		color: red;
 	}
-	section{
-		position: absolute;
-		top: 5%;
-		width: 99%;
-		
-	}
 	p a{
 		width: 500px;
 		color: white;
@@ -30,19 +24,20 @@
 	/* Menu */
 	header{
 		position: fixed;
-		top: 0.5%;
-		left: 25%;
+		text-align: center;
+		top: 25%;
+		left: 5%;
 	}
 	header ol {
-		margin:0;
-		padding:0;
-		list-style-type:none;
-		text-align:center;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		width: 100px;
 	}
 	header li {
 		float:left;
 		margin:auto;
-		padding:0;
+		padding-top: 15px;
 	}
 	header li a {
 		display:block;
@@ -54,14 +49,18 @@
 	header ol li ol {
 		display:none;
 	}
-	header li ol {
-		position:absolute;
-	}
-	header {
-		height:50px;
-	}
 	header ol li:hover ol {
 		display:block;
+	}
+	header ol li:hover a {
+		color:black;
+		background-color: white;
+		border-radius: 10px;
+	}
+	header ol li:hover ol a {
+		display:block;
+		background-color: gray;
+		border-radius: 10px;
 	}
 	header li:hover ol li {
 		float:none;
@@ -87,7 +86,6 @@
 		text-align: center;
 		color: red;
 	}
-
 	p a{
 		width: 500px;
 		color: white;
@@ -103,7 +101,7 @@
 		display: none;
 	}
 }
-  
+/* Style du site */
 @font-face{
 	font-family: "Audiowide-Regular";
 	src: url('Audiowide-Regular.ttf');
