@@ -12,7 +12,6 @@
 		color: red;
 	}
 	p a{
-		width: 500px;
 		color: white;
 	}
 	h1{
@@ -23,53 +22,60 @@
 	}
 	/* Menu */
 	header{
+		border: 2px solid black;
+		width: 200px;
 		position: fixed;
 		text-align: center;
 		top: 25%;
 		left: 5%;
-	}
+	}	
 	header ol {
 		margin: 0;
 		padding: 0;
 		list-style-type: none;
-		width: 100px;
 	}
 	header li {
-		float:left;
-		margin:auto;
-		padding-top: 15px;
+		float: left;
+		margin: auto;
 	}
 	header li a {
-		display:block;
-		width:100px;
-		color:white;
-		text-decoration:none;
-		padding:5px;
-	}
-	header ol li ol {
-		display:none;
-	}
-	header ol li:hover ol {
-		display:block;
+		display: block;
+		width: 170px;
+		color: white;
+		text-decoration: none;
+		padding: 15px;
 	}
 	header ol li:hover a {
-		color:black;
+		color: black;
 		background-color: white;
-		border-radius: 10px;
+	}
+	#top{
+		padding-top: 0;
+	}
+	/* Sous-menu */
+	/*
+	header ol li ol {
+		display: none;
+	}
+	header ol li:hover ol {
+		display: block;
+		position: absolute;
+		left: 115%;
 	}
 	header ol li:hover ol a {
-		display:block;
+		display: block;
 		background-color: gray;
 		border-radius: 10px;
 	}
 	header li:hover ol li {
-		float:none;
+		float: none;
 	}
 	header li a:hover {
-		color:black;
+		color: black;
 		background-color: white;
 		border-radius: 10px;
-	}	
+	}
+	*/
 }
 
 @media screen and (max-width: 1000px) {
