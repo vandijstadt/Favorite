@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- titre de la page -->
+    <title>Dayz_Syntaxes_School "débutant</title>
+    <!-- îcone de l'onglet -->
+    <link rel="shortcut icon" href="./logo-Dayz.png">
+    <link rel="stylesheet" href="style02.css">
+</head>
+
+<body>
+    <header>
+        <center>
+            <h1>FORMULAIRE</h1>
+        </center>
+    </header>
+
+    <main>
+        <section id="form">
+            <h2>
+                <form method="post">
+                    <!-- label for"name" + input id"name" = sont liées -->
+                    <label for="name">Nom et Prénom :</label>
+                    <!-- placeholder= "ecriture" dans le "input" -->
+                    <input style="width: 16%;
+              " type="text" id="name" name="name" placeholder="Entrer votre Nom et Prénom" />
+
+
+                    <br /><br />
+
+                    <!-- le label for "" + input type "" + id ""
+               + name "" = se lient entre eux -->
+                    <label for="Discord">Nom pseudo-Discord :</label>
+                    <input style="width: 15%;
+              " type="text" id="Discord" name="Discord" placeholder="Entrer votre Discord" />
+
+                    <br />
+                    <br />
+
+                    <label for="mail">Votre email :</label>
+                    <input type="email" id="email" name="email" placeholder="Entrer votre email" />
+
+                    <br><br>
+                    <label for="service">Type de service :</label>
+                    <select style="width: 16%;">
+                        <optgroup label="Choisissez votre service" name="service"></optgroup>
+                        <option value="Cours-Syntaxes" name="Cours_Syntaxes">Cours de Syntaxes [Nitrado] de A à Z</option>
+                        <option value="Réglage-Serveurs" name="Réglage_Serveurs">Réglages de vos serveurs [fichiers divers]</option>
+                        <option value="Corrections-Fichiers" name="Corrections_Fichiers">Corrections de vos fichiers [XML & .json]</option>
+                        <option value="Mapings" name="Mapings">Réalisations de vos " Mappings "</option>
+                    </select>
+            </h2>
+            <BR></BR>
+
+            <br>
+
+
+            <br><br>
+
+
+            <label for="crayon"></label>
+            <fieldset style="width: 90%;height: 90%; border: 0;">
+                <marquee behavior="autonome" direction=""><img style="width: 500px;" src="./crayon.gif" alt=""></marquee>
+            </fieldset>
+
+
+
+            <br><br>
+            <!-- textarea = c'est une "case" pour pouvoir noter un [commentaire,ticket,autres] -->
+            <textarea name="message" placeholder="  Votre message .... "
+                cols="35"
+                rows="5"></textarea>
+
+            <br><br>
+
+            <fieldset style="width: 90%;border: 0; color: rgb(255, 0, 0);">
+                <marquee behavior="alternate" direction=""> LA MAISON NE FAIT PAS "CREDIT"</marquee>
+            </fieldset>
+
+
+            <!-- input type checkbox = est un moyen pour valider quelque chose -->
+            <input type="checkbox" name="cgv" id="cgv">
+            <label for="cgv">Accepter les conditions générales
+            </label>
+
+            <br><br><br>
+            <!-- input sumit= bouton pour envoyer -->
+            <input type="submit" name="valider"></a>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
+
+
