@@ -36,5 +36,10 @@ function addToHistory(title, url) {
     displayHistory(); // Rafraîchir l'affichage
 }
 
+function clearHistory() {
+    localStorage.removeItem('searchHistory');
+    historiqueList.innerHTML = '<li>Aucun historique</li>';
+}
+
 // Charger l'historique au démarrage
 document.addEventListener('DOMContentLoaded', displayHistory);

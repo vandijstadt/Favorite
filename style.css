@@ -179,3 +179,37 @@ body {
         display: none;
     }
 }
+.result-item {
+    display: flex;
+    justify-content: space-between; /* Pousse le titre à gauche et le tag à droite */
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.item-tags {
+    font-size: 0.75em;
+    color: #888;
+    background: #f9f9f9;
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    
+    /* CACHÉ PAR DÉFAUT */
+    opacity: 0;
+    
+    /* CONFIGURATION DU DÉLAI */
+    /* Transition de l'opacité sur 0.5s, après une attente de 10s */
+    transition: opacity 0.5s ease 1s; 
+}
+
+/* AU SURVOL */
+.result-item:hover .item-tags {
+    opacity: 1;
+}
+
+/* OPTIONNEL : Si la souris quitte l'élément, le tag disparait instantanément sans attendre 10s */
+.result-item:not(:hover) .item-tags {
+    transition: opacity 0.2s ease 0s;
+}
