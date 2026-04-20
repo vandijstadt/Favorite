@@ -70,6 +70,7 @@ fetch('data.json')
           }
         }
       }
+      // Nettoyer la barre de recherche
       if(e.key === 'Delete' || e.key === 'Escape') {
         searchInput.value = '';
         resultsList.innerHTML = '';
@@ -80,7 +81,28 @@ fetch('data.json')
         resultsList.innerHTML = '';
         clearHistory();
       }
+      // Aide pour les recherche
+      if(e.ctrlKey){
+        console.log('Control')
+        if(e.key=='g'){
+          searchInput.value = "+y "+searchInput.value;
+        }
+        else if(e.key=='y'){
+          searchInput.value = "+y "+searchInput.value;
+        }
+        else if(e.key=='h'){
+          e.preventDefault();
+          const historyData = JSON.parse(localStorage.getItem('history') || '[]');
+        
+          if (historyData.length > 0) {
+              const lastEntry = historyData[historyData.length - 1];
+              searchInput.value = lastEntry.title; 
+          } else {
+              console.log("Historique vide");
+          }
 
+        }
+      }
     });
 
     // Gestion de l'affichage en temps réel
